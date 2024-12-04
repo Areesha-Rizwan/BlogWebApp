@@ -1,0 +1,33 @@
+<!-- profile.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <h2>User Profile</h2>
+    
+    <!-- Profile Information -->
+    <div class="profile-info">
+      <img id="profileImage" src="default-avatar.png" alt="Profile Picture">
+      <div class="profile-details">
+        <p id="profileName">Name: Loading...</p>
+        <p id="profileEmail">Email: Loading...</p>
+      </div>
+    </div>
+
+    <!-- Profile Update Section -->
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.1.3/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script> <!-- Add Firebase config here -->
+  <script src="profile.js"></script>
+</body>
+</html>
